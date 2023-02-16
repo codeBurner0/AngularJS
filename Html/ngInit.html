@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<head>
+    <script src="../Scripts/Angular.js"></script>
+    <title>Angular JS</title>
+</head>
+<center>
+<body >
+    <div ng-init="name='Ankit Anand'; rollNo=23;">
+        <H1>{{name}}</H1>
+        <H1 >{{rollNo}}</H1>
+    </div>
+    <div ng-init="arr=['Ankit','Anand']">
+        <H1 >{{arr[0]+" "+arr[1]}}</H1>
+    </div>
+    <div ng-init="arrOfObjects=[{name:'Ankit',rollNo:09,sec:'D'},{name:'Pradyumn',rollNo:41,sec:'C'}]">
+        <H1 >{{arrOfObjects[0].name}}</H1>
+        <H1 >{{arrOfObjects[1].name}}</H1>
+    </div>
+    <div ng-init="quantity=1;price=10">
+        Quantity: <input type="text" ng-model="quantity"><br>
+        Price: <input type="text" ng-model="price"><br>
+        {{quantity*price}}
+    </div>
+</body>
+</center>
+</html>
