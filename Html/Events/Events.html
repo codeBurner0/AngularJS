@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyMod">
+<head>
+    <title>Even Handling</title>
+    <script src="C:\Users\Ankit Anand\Desktop\AngularJS\Scripts\Angular.js"></script>
+    <script src="C:\Users\Ankit Anand\Desktop\AngularJS\JS\events.js"></script>
+</head>
+<body ng-controller="myContro2">
+    <!-- when you click on the button, then the number inceases by one -->
+    <button ng-click="func()">Click me</button>
+    {{number}}
+    <!-- when you double click on the button, then the number inceases by one -->
+    <button ng-dblclick="number=number+1">Double Click me</button>
+    {{number}}
+    <!-- when you press mouse button and after leave the mouse button , then the number inceases by one -->
+    <button ng-mouseup="number=number+1">Mouse Up on me</button>
+    {{number}}
+    <!-- when you press the mouse button, then the number inceases by one -->
+    <button ng-mousedown="number=number+1">Mouse Up on me</button>
+    {{number}}
+    <!-- when you move mouse cursor on the button, then the number inceases by one -->
+    <button ng-mouseover="number=number+1">Mouse Over on me</button>
+    {{number}}
+    <!-- when you move mouse cursor on the button and after leave the cursor from button, then the number inceases by one -->
+    <button ng-mouseleave="number=number+1">Mouse Leave on me</button>
+    {{number}}
+    <!-- when you move mouse on the button, then the number inceases by one -->
+    <button ng-mouseenter="number=number+1">Mouse enter on me</button>
+    {{number}}
+    <!-- when you rotate and move mouse on the button, then the number inceases by one repeatedly -->
+    <button ng-mousemove="number=number+1">Mouse move on me</button>
+    {{number}}
+</body>
+</html>
