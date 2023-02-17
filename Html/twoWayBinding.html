@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <script src="../Scripts/Angular.js"></script>
+    <script src="../JS/Module.js"></script>
+    <title>Angular JS</title>
+</head>
+<center>
+<body ng-controller="myController">
+    <input type="text" ng-model="name2">
+    <h1 ng-bind="name2"></h1>
+
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" ng-model="obj.name"></td>
+        </tr>
+        <tr>
+            <td>Roll No</td>
+            <td><input type="text" ng-model="obj.rollNo"></td>
+        </tr>
+        <tr>
+            <td>Section</td>
+            <td><input type="text" ng-model="obj.sec"></td>
+        </tr>
+    </table>
+    <table border="1">
+        <tr>
+            <td>Name</td>
+            <td ng-bind="obj.name"></td>
+        </tr>
+        <tr>
+            <td>Roll No</td>
+            <td ng-bind="obj.rollNo"></td>
+        </tr>
+        <tr>
+            <td>Section</td>
+            <td ng-bind="obj.sec"></td>
+        </tr>
+        
+    </table>
+</body>
+</html>
