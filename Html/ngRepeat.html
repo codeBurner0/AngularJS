@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myModule">
+<head>
+    <script src="../Scripts/Angular.js"></script>
+    <script src="../JS/ngRepeat.js"></script>
+    <title>Document</title>
+</head>
+<body ng-controller="myContro">
+    <ul>
+        <li ng-repeat="item in lists">
+            {{item}}
+        </li>
+    </ul>
+    <ul>
+        <li ng-repeat="(x,y) in obj">
+            {{x}} = {{y}}
+        </li>
+    </ul>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Designation</th>
+            <th>Salary</th>
+        </tr>
+        <tr ng-repeat="item in stu_record">
+            <td>{{item.name}}</td>
+            <td>{{item.Age}}</td>
+            <td>{{item.Designation}}</td>
+            <td>{{item.Salary}}</td>
+        </tr>
+    </table>
+</body>
+</html>
